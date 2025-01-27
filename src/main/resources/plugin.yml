@@ -1,0 +1,72 @@
+name: WhatIs
+version: ${plugin.version}
+authors: [ Schmoller, Narimm ]
+api-version: ${spigot.api.version}
+description: WhatIs provides tools to find out what each plugin interfaces with - built for ${spigot.version}.
+load: POSTWORLD
+main: au.com.addstar.whatis.WhatIs
+
+permissions:
+  whatis:
+    default: op
+  whatis.command:
+    default: op
+    children:
+      whatis: true
+  whatis.report:
+    default: op
+    children:
+      whatis: true
+  whatis.event:
+    default: op
+    children:
+      whatis: true
+  whatis.eventmonitor:
+    default: op
+    children:
+      whatis: true
+  whatis.whatcancelled:
+    default: op
+    children:
+      whatis: true
+  whatis.tps:
+    default: op
+    children:
+      whatis: true
+  whatis.dependencies:
+    default: op
+    children:
+      whatis: true
+  whatis.entity:
+    default: op
+    children:
+      whatis: true
+  whatis.chunk:
+    default: op
+    children:
+      whatis: true
+  whatis.tasks:
+    default: op
+    children:
+      whatis: true
+  whatis.find:
+    default: op
+    children:
+      whatis: true
+  whatis.filters:
+    default: op
+    children:
+      whatis: true
+  whatis.version:
+    default: op
+    children:
+      whatis: true
+  whatis.printfield:
+    default: op
+    children:
+      whatis: true
+
+commands:
+  whatis:
+    description: Allows you to find lots of information.
+    permission: whatis
